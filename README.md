@@ -8,3 +8,5 @@ the first part being your jira ticket EX-111
 
 ### Create Release Candidate
 Creating the release candidate means that anything merged here will be considered releasable upon final testing
+
+### Manually Create Release Candidate
