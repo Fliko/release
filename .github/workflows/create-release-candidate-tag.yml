@@ -1,0 +1,17 @@
+name: Create Release Candidate 
+on:
+  push:
+    branches:
+      - staging
+jobs:
+  build:
+    name: Create Release Candidate 
+    runs-on: ubuntu-latest
+    steps:
+    - name: Creating a release candidate for this application version.
+      env:
+        RELEASE_TYPE: "patch"
+        USERNAME: Fliko
+        TOKEN: ${{ github.token }}
+        REPO: ${{ github.repository }}
+      uses: parkhub/create-release-candidate-tag-action@master

@@ -1,0 +1,21 @@
+name: Rebase On Release
+on:
+  push:
+    branches:
+      # All pushes to this branch will trigger the task.
+      - main
+
+env:
+  GITHUB_TOKEN: ${{ github.token }}
+
+jobs:
+  rebase_branches:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out action code
+        uses: actions/checkout@v2
+      - name: Rebase lower branches on main
+        uses: parkhub/github-action-release-rebase@main
+        with:
+          base_ref: main
+          head_branches: staging
