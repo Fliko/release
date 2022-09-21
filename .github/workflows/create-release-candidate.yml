@@ -15,4 +15,4 @@ jobs:
         USERNAME: Fliko
         TOKEN: ${{ github.token }}
         REPO: ${{ github.repository }}
-      uses: parkhub/create-official-release-action@master
+      uses: Fliko/create-official-release-action@master
