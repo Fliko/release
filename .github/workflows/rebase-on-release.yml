@@ -18,4 +18,4 @@ jobs:
         uses: parkhub/github-action-release-rebase@main
         with:
           base_ref: main
-          head_branches: staging
+          head_branches: staging develop
