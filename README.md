@@ -10,7 +10,7 @@ the first part being your jira ticket EX-111
 Creates a github release to be deployed with generated changelog.
 
 ### Rebase on Release
-As code moves through stages it collects minor changes, all branches should be up to date with production latest
+As code moves through stages it collects minor changes, this merges codes final form back into dev stages.
 
 ## Developer Flow
 
@@ -23,3 +23,9 @@ As code moves through stages it collects minor changes, all branches should be u
  - Make sure all items in RC are tested by end of next sprint
  - Merge RC tag into Main to create official release
  - Deploy to prod
+ 
+ ## TODO
+ 
+ - Add jira [webhook](https://developer.atlassian.com/server/jira/platform/webhooks/) and jira [workflow](https://github.com/parkhub/save-repo-for-jira-action/blob/master/index.js) for tracking branches 
+ - Setup Template for changelog
+ - Match Pre Release and release changelog or at least reference
