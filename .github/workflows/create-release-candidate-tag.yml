@@ -14,4 +14,4 @@ jobs:
         USERNAME: Fliko
         TOKEN: ${{ github.token }}
         REPO: ${{ github.repository }}
-      uses: parkhub/create-release-candidate-tag-action@master
+      uses: Fliko/create-release-candidate-tag-action@master
