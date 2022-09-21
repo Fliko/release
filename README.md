@@ -29,3 +29,7 @@ As code moves through stages it collects minor changes, this merges codes final 
  - Add jira [webhook](https://developer.atlassian.com/server/jira/platform/webhooks/) and jira [workflow](https://github.com/parkhub/save-repo-for-jira-action/blob/master/index.js) for tracking branches 
  - Setup Template for changelog
  - Match Pre Release and release changelog or at least reference
+ 
+Changelog goal is something like so:
+
+![changelog](/Screenshot%20from%202022-09-21%2007-53-02.png)
